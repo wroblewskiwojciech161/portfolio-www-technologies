@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio Wojciech Wróblewski</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="header">
+      <a href="#page1" class="logo"></a>
+      <input type="checkbox" id="chk" onclick="myFunction1()">
+      <label for="chk" class="show-menu-btn">
+        <i  class="fas fa-ellipsis-h"></i>
+      </label>
+
+      <ul id="menu" class="menu">
+        <a id="link-page1" href="#page1" onclick="myFunction()" >HOME</a>
+        <a id="link-page2" href="#page2" onclick="myFunction()" >ABOUT</a>
+        <a id="link-page3" href="#page3" onclick="myFunction()" >PROJECTS</a>
+        <a id="link-page4" href="#page4" onclick="myFunction()" >CONTACT</a>
+      
+        <label class="hide-menu-btn">
+          <i   onclick="myFunction()" class="fas fa-times" ></i>
+        </label>
+      </ul>
+    </nav>
+
+    <div class="icon-bar">
+      <a href="#page4" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#page4" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#page4" class="google"><i class="fa fa-google"></i></a> 
+      <a href="https://linkedin.com/in/wroblewskiwojciech161" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/wroblewskiwojciech161"  class="youtube"><i class="fa fa-github"></i></a> 
+    </div>
+
+   
+
+    <section class="content">
+      <div class="page1" id="page1">
+      
+        <h1>I'm Wojtek Wróblewski</h1>
+        <br>
+        <h1>programmer</h1>
+        <br>
+        <a id="scroll-button" href="#page2">about me  </a>
+      </div>
+
+      <!-- PAGE 2-->
+      
+      <div class="page2" id="page2">
+      
+        <!-- Portfolio Gallery Grid -->
+          <div class="about-wrapper"> 
+
+          
+            <img alt="avatar" class="image-container" src="img/mediaAvatar.png"/>
+           
+            <div class="information-container">
+              <h1>Wykształcenie</h1>
+              <p>
+                (a w zasadzie jego brak )
+                studia inżynierskie - Informatyka
+                Politechnika Wrocławska, </p>
+                <p>Wydział Podstawowych
+                Problemów Techniki, 10.2018 - obecnie
+              </p>
+              <h1>Zainteresowania w dziedzinie IT</h1>
+              <p>
+                 technologie frontendowe, computer security
+              </p>
+             
+              <h1>Inne zainteresowania</h1>
+              <p>
+                fizyka,astronomia, quantum computing,quantum algorithms
+              </p>
+             
+            </div>
+ 
+          </div>
+            
+      </div>
+
+   
+      <div class="page3" id="page3">
+       
+      <section id="projects" class="projects">
+         
+          <article class = "project-info">
+
+          <h1 class="project-title">Podróżownik</h1>
+          <p class="project-paragraph"> 
+          Aplikacja webowa poświęcona motocyklistom oraz
+          wszystkim entuzjastom podróżowania. Głównie wykorzystująca
+          technologie React oraz Django. Dostępna pod  <a href="http://podrozownik-prod.herokuapp.com">link</a>
+          </p> 
+          </article>
+
+
+          <article class = "project-info">
+            <h1 class="project-title">B.A.S.I.O.R</h1>
+                <p class="project-paragraph"> 
+                  (Badanie adaptacji systemu i ograniczeń ruchu) - aplikacja w
+                  architekturze klient-server symulująca poruszanie wybranych lini
+                  tramwajowych we Wrocławiu. Symuluje zachowanie jak optymalnie
+                  powinny zachować się tramwaje podczas awarii trakcji. Umożliwia
+                  obrazowanie jak zmieni się graf sieci tramwajowych miasta podczas
+                  usuwania węzłów komunikacyjnych.Głowne technologie to Html,CSS,
+                  Python, Flask i biblioteka OSMNX(kod dostępny na github)
+                </p> 
+            </article>
+
+            <div class="project-photos">
+              <img alt="b.a.s.i.o.r - screen z aplikacji" src="img/basior.png"/>
+            </div>
+          
+
+          <article class = "project-info">
+            <h1 class="project-title">Project SCORPIO </h1>
+              <p class="project-paragraph"> 
+               Aktywny projekt realizowany przez koło naukowe OFF-ROAD, którego celem jest
+               skonstruowanie łazika marsjańskiego zgodnie ze specyfikacją wyznaczoną
+               przez zawody akademickie.
+              
+            </p> 
+        </article>
+
+        <div class="project-photos">
+          <img alt="łazik scorpio 7" src="img/rover.png"/>
+        </div>
+
+        <a id="readmore-button" href="projects.html">READ MORE</a>
+      
+
+
+     </section>
+       
+        
+
+
+      </div>
+       <!-- PAGE 4-->
+      <div class="page4" id="page4">
+      
+        <div class="icon-bar-page">
+          <a href="#" class="facebook"><i class="fa fa-facebook">facebook.com/randy-bobandy/</i></a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter">facebook.com/trailerpark-superviser/</i></a> 
+          <a href="https://linkedin.com/in/wroblewskiwojciech161" class="linkedin"><i class="fa fa-linkedin">wroblewskiwojciech161</i></a>
+          <a href="https://github.com/wroblewskiwojciech161" class="youtube"><i class="fa fa-github">wroblewskiwojciech161</i></a> 
+          <a href="#" class="google"><i class="fa fa-google">wroblewskiwojciech161@gmail.com</i></a> 
+    
+        </div>
+        <footer id="footer">
+          <p>© copyrights Jim Lahey </p>
+        </footer>
+      </div>
+    </section>
+
+
+
+    <script type="text/javascript">
+
+      function myFunction() {
+        var x = document.getElementById("menu");
+          x.style.right = "-100%";
+      }
+    
+      function myFunction1() {
+        var x = document.getElementById("menu");
+          x.style.right = "0";
+      }
+    </script>
+  </body>
+
+</html>

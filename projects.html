@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio Wojciech Wróblewski</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="header">
+      <a href="#page1" class="logo"></a>
+      <input type="checkbox" id="chk" onclick="myFunction1()">
+      <label for="chk" class="show-menu-btn">
+        <i  class="fas fa-ellipsis-h"></i>
+      </label>
+
+      <ul id="menu" class="menu">
+        <a id="link-page1" href="index.html" onclick="myFunction()" >HOME</a>
+        
+    
+        <label class="hide-menu-btn">
+          <i   onclick="myFunction()" class="fas fa-times" ></i>
+        </label>
+      </ul>
+    </nav>
+
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-github"></i></a> 
+    </div>
+
+   
+
+    <section class="content">
+        <div class="page-projects" id="page-projects">
+       
+            <section id="projects" class="projects">
+                
+
+                <article class = "project-info">
+      
+                    <h1 class="project-title">Kabaret PAKA</h1>
+                    <p class="project-paragraph"> 
+                        Statyczna strona wykonana w technologi React.js
+                        Dostępna pod  <a href="https://kabaretpaka.pl">kabaretpaka.pl</a>
+                    </p> 
+                </article>
+                
+                
+
+                <article class = "project-info">
+                    
+                    <h1 class="project-title"> BeerCompiler</h1>
+                    <p class="project-paragraph"> 
+                        Kompilator języka imperatywnego podobnego do Pascala
+                        na język sześciorejestrowej maszyny wirtualnej ( prosty assembler),
+                        wykonany w Python3 przy pomocy biblioteki
+                        SLY (Sly Lex Yacc)
+                    </p> 
+                </article>
+
+                
+                <article class = "project-info">
+      
+                    <h1 class="project-title"> BreweryMarket-Application</h1>
+                    <p class="project-paragraph"> 
+                        aplikacja bazodanowa reprezentująca portal
+                        dla fanów piwa kraftowego. Umożliwia dodawanie dodawanie
+                        potencjalnych browarów oraz wyszukiwanie interesujących pozycji z
+                        poziomu usera. Głowne technologie to MySql i JavaFX. 
+                        (kod i screeny interfejsu dostępne na github)
+                    </p> 
+                </article>
+
+
+                
+                <article class = "project-info">
+      
+                <h1 class="project-title">Podróżownik</h1>
+                <p class="project-paragraph"> 
+                Aplikacja webowa poświęcona motocyklistom oraz
+                wszystkim entuzjastom podróżowania. Głównie wykorzystująca
+                technologie React oraz Django. Dostępna pod  <a href="http://podrozownik-prod.herokuapp.com">link</a>
+                </p> 
+                </article>
+      
+      
+                <article class = "project-info">
+                  <h1 class="project-title">B.A.S.I.O.R</h1>
+                      <p class="project-paragraph"> 
+                        (Badanie adaptacji systemu i ograniczeń ruchu) - aplikacja w
+                        architekturze klient-server symulująca poruszanie wybranych lini
+                        tramwajowych we Wrocławiu. Symuluje zachowanie jak optymalnie
+                        powinny zachować się tramwaje podczas awarii trakcji. Umożliwia
+                        obrazowanie jak zmieni się graf sieci tramwajowych miasta podczas
+                        usuwania węzłów komunikacyjnych.Głowne technologie to Html,CSS,
+                        Python, Flask i biblioteka OSMNX(kod dostępny na github)
+                      </p> 
+                  </article>
+      
+                  <div class="project-photos">
+                    <img alt="b.a.s.i.o.r - screen z aplikacji" src="img/basior.png"/>
+                  </div>
+                
+      
+                <article class = "project-info">
+                  <h1 class="project-title">Project SCORPIO </h1>
+                    <p class="project-paragraph"> 
+                     Aktywny projekt realizowany przez koło naukowe OFF-ROAD, którego celem jest
+                     skonstruowanie łazika marsjańskiego zgodnie ze specyfikacją wyznaczoną
+                     przez zawody akademickie.
+                    
+                  </p> 
+              </article>
+      
+              <div class="project-photos">
+                <img alt="łazik scorpio 7" src="img/rover.png"/>
+              </div>
+      
+             
+            
+           </section>
+             
+        </div>
+      
+    </section>
+
+
+
+  
+  </body>
+
+</html>
