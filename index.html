@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Portfolio Wojciech Wróblewski</title>
@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -19,7 +21,7 @@
         <i  class="fas fa-ellipsis-h"></i>
       </label>
 
-      <ul id="menu" class="menu">
+      <div id="menu" class="menu">
         <a id="link-page1" href="#page1" onclick="myFunction()" >HOME</a>
         <a id="link-page2" href="#page2" onclick="myFunction()" >ABOUT</a>
         <a id="link-page3" href="#page3" onclick="myFunction()" >PROJECTS</a>
@@ -28,7 +30,7 @@
         <label class="hide-menu-btn">
           <i   onclick="myFunction()" class="fas fa-times" ></i>
         </label>
-      </ul>
+      </div>
     </nav>
 
     <div class="icon-bar">
@@ -37,18 +39,20 @@
       <a href="#page4" class="google"><i class="fa fa-google"></i></a> 
       <a href="https://linkedin.com/in/wroblewskiwojciech161" class="linkedin"><i class="fa fa-linkedin"></i></a>
       <a href="https://github.com/wroblewskiwojciech161"  class="youtube"><i class="fa fa-github"></i></a> 
+      <a href="#page4" class="google"><i class="fa fa-phone"></i></a> 
+
     </div>
 
-   
 
     <section class="content">
       <div class="page1" id="page1">
       
         <h1>I'm Wojtek Wróblewski</h1>
         <br>
-        <h1>programmer</h1>
+        <h1>programmer</h1>  
         <br>
         <a id="scroll-button" href="#page2">about me  </a>
+        <a id="scroll-button"href="./img/wwroblewski_cv.pdf">curriculum vitae </a>
       </div>
 
       <!-- PAGE 2-->
@@ -61,24 +65,24 @@
           
             <img alt="avatar" class="image-container" src="./img/mediaAvatar.png"/>
            
-            <div class="information-container">
-              <h1>Wykształcenie</h1>
-              <p>
-                (a w zasadzie jego brak )
-                studia inżynierskie - Informatyka
-                Politechnika Wrocławska, </p>
-                <p>Wydział Podstawowych
-                Problemów Techniki, 10.2018 - obecnie
+            <div  class="information-container">
+              <h1>EDUCATION</h1>
+              <p  >
+                Engineering studies - Computer Science
+                </p>
+                <p>Faculty of Fundamental Problems of Technology, 10.2018 - now
               </p>
-              <h1>Zainteresowania w dziedzinie IT</h1>
-              <p>
-                 technologie frontendowe, computer security
+              <h1>INTERESTS</h1>
+              <p  >
+                 frontend & backend technologies, computer security
               </p>
              
-              <h1>Inne zainteresowania</h1>
-              <p>
-                fizyka,astronomia, quantum computing,quantum algorithms
+              <h1>OTHER INTERESTS</h1>
+              <p >
+                physics, astronomy, quantum computing, music
               </p>
+
+              
              
             </div>
  
@@ -90,43 +94,45 @@
       <div class="page3" id="page3">
        
       <section id="projects" class="projects">
-         
+        <h2 >PROJECTS</h2>
           <article class = "project-info">
-
-          <h1 class="project-title">Podróżownik</h1>
+          
+          <h2 class="project-title">Podróżownik</h2>
           <p class="project-paragraph"> 
-          Aplikacja webowa poświęcona motocyklistom oraz
-          wszystkim entuzjastom podróżowania. Głównie wykorzystująca
-          technologie React oraz Django. Dostępna pod  <a href="http://podrozownik-prod.herokuapp.com">link</a>
+            Web application dedicated to motorcyclists and all travel enthusiasts.
+             Mainly using React and Django technologies. It is available at 
+                <a href="http://podrozownik-prod.herokuapp.com">link</a>
           </p> 
           </article>
 
 
           <article class = "project-info">
-            <h1 class="project-title">B.A.S.I.O.R</h1>
+            <h2 class="project-title">B.A.S.I.O.R</h2>
                 <p class="project-paragraph"> 
-                  (Badanie adaptacji systemu i ograniczeń ruchu) - aplikacja w
-                  architekturze klient-server symulująca poruszanie wybranych lini
-                  tramwajowych we Wrocławiu. Symuluje zachowanie jak optymalnie
-                  powinny zachować się tramwaje podczas awarii trakcji. Umożliwia
-                  obrazowanie jak zmieni się graf sieci tramwajowych miasta podczas
-                  usuwania węzłów komunikacyjnych.Głowne technologie to Html,CSS,
-                  Python, Flask i biblioteka OSMNX(kod dostępny na github)
+                  (Badanie adaptacji systemu i ograniczeń ruchu) -
+                   application in client-server architecture simulating
+                    the movement ofselected tram lines in Wrocław. It simulates 
+                    the behavior of how optimally trams should behave during traction 
+                    failure. It allows you to visualize how the graph of the city's tram
+                     networks will change when removing communication nodes. The main
+                      technologies are Html, CSS, Python, Flask and the OSMNX library 
+                      (code available on github)  
                 </p> 
             </article>
 
             <div class="project-photos">
-              <img alt="b.a.s.i.o.r - screen z aplikacji" src="./img/basior.png"/>
+              <img   alt="b.a.s.i.o.r - screen z aplikacji" src="./img/basior.png"/>
             </div>
           
 
           <article class = "project-info">
-            <h1 class="project-title">Project SCORPIO </h1>
+            <h2 class="project-title">Project SCORPIO </h2>
               <p class="project-paragraph"> 
-               Aktywny projekt realizowany przez koło naukowe OFF-ROAD, którego celem jest
-               skonstruowanie łazika marsjańskiego zgodnie ze specyfikacją wyznaczoną
-               przez zawody akademickie.
-              
+                An active project carried out by the OFF-ROAD research club, the goal of which is
+                constructing a Mars rover in accordance with the designated specification
+                by academic professions. Check out research club page 
+                <a href="http://www.scorpio.pwr.edu.pl/">here</a>
+                
             </p> 
         </article>
 
@@ -136,11 +142,9 @@
 
         <a id="readmore-button" href="projects.html">READ MORE</a>
       
-
-
      </section>
        
-        
+     <i ></i>
 
 
       </div>
@@ -148,22 +152,42 @@
       <div class="page4" id="page4">
       
         <div class="icon-bar-page">
-          <a href="#" class="facebook"><i class="fa fa-facebook">facebook.com/randy-bobandy/</i></a> 
-          <a href="#" class="twitter"><i class="fa fa-twitter">facebook.com/trailerpark-superviser/</i></a> 
-          <a href="https://linkedin.com/in/wroblewskiwojciech161" class="linkedin"><i class="fa fa-linkedin">wroblewskiwojciech161</i></a>
-          <a href="https://github.com/wroblewskiwojciech161" class="youtube"><i class="fa fa-github">wroblewskiwojciech161</i></a> 
-          <a href="#" class="google"><i class="fa fa-google">wroblewskiwojciech161@gmail.com</i></a> 
+          <a href="#" class="facebook"><i class="fa fa-facebook">  temporarily unavailable</i></a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter">  temporarily unavailable </i></a> 
+          <a href="https://linkedin.com/in/wroblewskiwojciech161" class="linkedin"><i class="fa fa-linkedin">  wroblewskiwojciech161</i></a>
+          <a href="https://github.com/wroblewskiwojciech161" class="youtube"><i class="fa fa-github">  wroblewskiwojciech161</i></a> 
+          <a href="#" class="google"><i class="fa fa-google">  wroblewskiwojciech161@gmail.com</i></a> 
+          <a href="#" class="youtube"><i class="fas fa-phone">  +48 515680740</i></a> 
     
         </div>
         <footer id="footer">
-          <p>© copyrights Jim Lahey </p>
+          <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+                    
+        
+      
+
+        <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+        </p>
+                
+          <p>© copyrights  </p>
         </footer>
       </div>
     </section>
 
 
-
-    <script type="text/javascript">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script >
 
       function myFunction() {
         var x = document.getElementById("menu");
@@ -174,7 +198,18 @@
         var x = document.getElementById("menu");
           x.style.right = "0";
       }
+
+      AOS.init({
+        offset: 0, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 1500, // values from 0 to 3000, with step 50ms
+
+      });
     </script>
+
+
+
+
   </body>
 
 </html>
