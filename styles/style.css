@@ -100,9 +100,9 @@
         
         width: 100%;
         position: fixed;
-        height: 100px;
+        height: auto;
         background: black;
-        padding: 0 20px;
+        padding: 0 20px 20px;
         color: black;
       }
     
@@ -295,7 +295,16 @@
     /*box-shadow: inset 0 0 1em gold, 0 0 1em rgb(253, 153, 3);*/
   }
   
-  
+   
+      #page2 .about-wrapper .information-container{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+        padding:20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        
+      }
   
   
   
@@ -315,8 +324,9 @@
       }
     
       #page2 .about-wrapper .information-container{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         width: 50%;
-        padding: 5vh 5vh 5vh 0;
+        padding:20px 20px 20px 20px;
         display: flex;
         flex-direction: column;
         text-decoration: none;
@@ -355,10 +365,12 @@
   
   #page3 .projects .project-info,
   #page-projects .projects .project-info{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 70%;
     height: auto;
     margin-bottom: 5vh;
     display: flex;
+     padding:20px 20px 20px 20px;
     flex-direction: column;
    
   }
@@ -369,6 +381,7 @@
     #page-projects .projects .project-info
     {
       width: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       height: auto;
       margin-bottom: 5vh;
       display: flex;
@@ -411,7 +424,7 @@
     #page-projects .projects .project-info h2,
     #page-projects .projects  h2 {
   
-      font-size: 2.2rem;
+      font-size: 2rem;
       line-height: 3rem;
       margin: 2rem 0 2rem 0;
       color: black;
@@ -422,7 +435,7 @@
     #page2 .about-wrapper .information-container p,
     #page-projects .projects .project-info p{
     
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       line-height: 2.9rem;
      
      
